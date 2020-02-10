@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UISliderChangeOpacity" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.10000000000000001" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cityStreet" translatesAutoresizingMaskIntoConstraints="NO" id="ZaI-Vj-Tmq">
+                                <rect key="frame" x="0.0" y="100" width="414" height="250"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Slide to Change Image Opacity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qc0-9J-M5e">
+                                <rect key="frame" x="42.666666666666657" y="40" width="328.66666666666674" height="28.666666666666671"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="2UZ-IW-66P">
+                                <rect key="frame" x="38" y="405" width="338" height="31"/>
+                                <connections>
+                                    <action selector="sliderChangeOpacity:" destination="BYZ-38-t0r" eventType="valueChanged" id="Fue-Jw-Jqn"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Opacity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jcR-W4-QsN">
+                                <rect key="frame" x="40" y="374" width="60" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="24" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="QRt-br-9eq">
+                                <rect key="frame" x="38" y="656" width="338" height="31"/>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Slide to Change Number Value" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KdS-rm-4Wl">
+                                <rect key="frame" x="40" y="475" width="334" height="29"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ryf-At-vXO">
+                                <rect key="frame" x="189.66666666666666" y="544" width="35" height="72"/>
+                                <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="60"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ZaI-Vj-Tmq" secondAttribute="bottom" constant="386" id="0Bg-IE-s95"/>
+                            <constraint firstItem="jcR-W4-QsN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="9bS-5b-ckV"/>
+                            <constraint firstItem="ryf-At-vXO" firstAttribute="top" secondItem="KdS-rm-4Wl" secondAttribute="bottom" constant="40" id="Art-36-lBl"/>
+                            <constraint firstItem="ryf-At-vXO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="D1H-Y1-pIW"/>
+                            <constraint firstItem="ZaI-Vj-Tmq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="DKs-CP-MTR"/>
+                            <constraint firstItem="QRt-br-9eq" firstAttribute="top" secondItem="ryf-At-vXO" secondAttribute="bottom" constant="40" id="EAI-d4-tLD"/>
+                            <constraint firstItem="KdS-rm-4Wl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="EnH-Sq-715"/>
+                            <constraint firstItem="QRt-br-9eq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="HUf-Z7-bNe"/>
+                            <constraint firstItem="ZaI-Vj-Tmq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="IsB-p3-G74"/>
+                            <constraint firstItem="KdS-rm-4Wl" firstAttribute="top" secondItem="2UZ-IW-66P" secondAttribute="bottom" constant="40" id="JFM-yA-IUu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2UZ-IW-66P" secondAttribute="trailing" constant="40" id="LUJ-kI-azA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QRt-br-9eq" secondAttribute="trailing" constant="40" id="PiX-qe-0YS"/>
+                            <constraint firstAttribute="trailing" secondItem="ZaI-Vj-Tmq" secondAttribute="trailing" id="R6b-Wt-LvV"/>
+                            <constraint firstItem="2UZ-IW-66P" firstAttribute="top" secondItem="jcR-W4-QsN" secondAttribute="bottom" constant="10" id="RCo-Zt-3wd"/>
+                            <constraint firstItem="jcR-W4-QsN" firstAttribute="top" secondItem="ZaI-Vj-Tmq" secondAttribute="bottom" constant="24" id="SNa-zz-IBF"/>
+                            <constraint firstItem="qc0-9J-M5e" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VBm-o6-bMk"/>
+                            <constraint firstItem="KdS-rm-4Wl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Xt8-9W-YQJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KdS-rm-4Wl" secondAttribute="trailing" constant="40" id="b9N-5o-crH"/>
+                            <constraint firstItem="2UZ-IW-66P" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="eKD-K4-cm2"/>
+                            <constraint firstItem="QRt-br-9eq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iE9-tb-MGb"/>
+                            <constraint firstItem="qc0-9J-M5e" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="ivJ-YF-9C9"/>
+                            <constraint firstItem="2UZ-IW-66P" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="r7e-cv-a5G"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="image" destination="ZaI-Vj-Tmq" id="IFK-ZP-Vch"/>
+                        <outlet property="slider" destination="2UZ-IW-66P" id="VBz-ZU-Vnf"/>
+                        <outlet property="sliderTwo" destination="QRt-br-9eq" id="tem-xo-NZh"/>
+                        <outlet property="sliderTwoOutput" destination="ryf-At-vXO" id="czl-O2-Y0D"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="126.35869565217392"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cityStreet" width="1600" height="900"/>
+    </resources>
+</document>
